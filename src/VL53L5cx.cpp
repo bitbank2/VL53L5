@@ -111,7 +111,7 @@ uint8_t VL53L5cx::getTargetStatus(uint8_t zone, uint8_t target)
     return _results.target_status[VL53L5CX_NB_TARGET_PER_ZONE * zone + target];
 }
 
-uint8_t VL53L5cx::getDistance(uint8_t zone, uint8_t target)
+uint16_t VL53L5cx::getDistance(uint8_t zone, uint8_t target)
 {
     return _results.distance_mm[VL53L5CX_NB_TARGET_PER_ZONE * zone + target];
 }
